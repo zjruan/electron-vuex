@@ -16,7 +16,7 @@ Inspired by [vuex-electron](https://www.npmjs.com/package/vuex-electron)
  * 巨量` I/O`，导致性能问题  
   启用 `persisted-state `，在高并发/高修改的情况下，会产生大量的 mutation 操作，而项目监听了每一个 mutation 操作，并保存到本地 `state` 存储文件(vuex.json)中，频繁的读写操作，导致巨量的 `I/O` 操作，从而产生性能问题
 * Vuex Action 链路中断问题  
-我们知道， `store.dispatch('actionName', payload)` 会返回一个 `Promise`， 但是在原项目下，该`Promise` 丢失了。而是时候，我们是需要这个`Promise`去处理一些逻辑的
+我们知道， `store.dispatch('actionName', payload)` 会返回一个 `Promise`， 但是在原项目下，该`Promise` 丢失了。而有些时候，我们是需要这个`Promise`去处理一些逻辑的
 
 
 **Doc Copy Vuex-Electron Project**
