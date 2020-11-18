@@ -7,8 +7,6 @@ Inspired by [vuex-electron](https://www.npmjs.com/package/vuex-electron)
 
 
 
-**Doc Copy Vuex-Electron Project**
-
 相较于 Vuex-Electron, 本项目解决的问题：
 * Store 多窗口共享问题  
 在没有启用 `persisted-state `的情况下，新建窗口的 State 不是最新的 State 数据，原因是还原 State，新窗口 `replaceState` 依赖 persisted-state 保存的本地文件（vuex.json）
@@ -19,6 +17,9 @@ Inspired by [vuex-electron](https://www.npmjs.com/package/vuex-electron)
   启用 `persisted-state `，在高并发/高修改的情况下，会产生大量的 mutation 操作，而项目监听了每一个 mutation 操作，并保存到本地 `state` 存储文件(vuex.json)中，频繁的读写操作，导致巨量的 `I/O` 操作，从而产生性能问题
 * Vuex Action 链路中断问题  
 我们知道， `store.dispatch('actionName', payload)` 会返回一个 `Promise`， 但是在原项目下，该`Promise` 丢失了。而是时候，我们是需要这个`Promise`去处理一些逻辑的
+
+
+**Doc Copy Vuex-Electron Project**
 ---
 
 <p align="center">
