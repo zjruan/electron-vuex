@@ -1,0 +1,22 @@
+{
+  "presets": [
+    "babel-preset-env"
+  ],
+  "plugins": [
+    "add-module-exports",
+    [
+      "transform-runtime",
+      {
+        "helpers": false,
+        "polyfill": false,
+        "regenerator": true,
+        "moduleName": "babel-runtime"
+      }
+    ]
+  ],
+  "env": {
+    "production": {
+      "presets": ["minify"]
+    }
+  }
+}
