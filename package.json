@@ -1,10 +1,11 @@
 {
   "name": "electron-vuex",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "electron multi-window vuex state sharing",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist --env-name production"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,20 @@
   },
   "homepage": "https://github.com/zjruan/electron-vuex#readme",
   "dependencies": {
+    "deepmerge": "^4.2.2",
     "electron-store": "^6.0.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-minify": "^0.5.1",
+    "electron": "^9.0.0",
+    "glob": "^7.1.6",
+    "webpack": "^5.5.0",
+    "webpack-cli": "^4.2.0"
   }
 }

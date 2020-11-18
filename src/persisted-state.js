@@ -89,11 +89,19 @@ class PersistedState {
   }
 
   subscribeOnChanges() {
+    // 添加函数节流，防止高并发时导致高IO操作
+    let timer = null
+    let delay = this.options.delay
+
     this.store.subscribe((mutation, state) => {
       if (this.blacklist && this.blacklist(mutation)) return
       if (this.whitelist && !this.whitelist(mutation)) return
+      if(timer) return;
 
-      this.setState(state)
+      timer = setTimeout(() => {
+        timer = null;
+        this.setState(state)
+      }, delay)
     })
   }
 }

@@ -1,3 +1,8 @@
-import electronVuex from './electron-vuex'
+// import electronVuex from './electron-vuex'
+import createSharedMutations from './shared-mutations'
+import createPersistedState from './persisted-state'
 
-export default electronVuex
+export default {
+  createSharedMutations,
+  createPersistedState
+}
