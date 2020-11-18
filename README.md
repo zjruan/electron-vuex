@@ -39,7 +39,7 @@ The easiest way to share your Vuex Store between all processes (including main).
 
 - [Vue](https://github.com/vuejs/vue) v2.0+
 - [Vuex](https://github.com/vuejs/vuex) v2.0+
-- [Electron](https://github.com/electron/electron) v2.0+
+- [Electron](https://github.com/electron/electron) v9.0+
 
 ### Installation
 
@@ -48,7 +48,7 @@ Installation of the Vuex Electron easy as 1-2-3.
 1. Install package with using of [yarn](https://github.com/yarnpkg/yarn) or [npm](https://github.com/npm/cli):
 
     ```
-    npm install /electron-vuex
+    npm install electron-vuex
     ```
 
 2. Include plugins in your Vuex store:
