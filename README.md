@@ -57,7 +57,7 @@ Installation of the Vuex Electron easy as 1-2-3.
     import Vue from "vue"
     import Vuex from "vuex"
 
-    import { createPersistedState, createSharedMutations } from "/electron-vuex"
+    import { createPersistedState, createSharedMutations } from "electron-vuex"
 
     Vue.use(Vuex)
 
