@@ -1,0 +1,28 @@
+{
+  "name": "electron-vuex",
+  "version": "1.0.4",
+  "description": "electron multi-window vuex state sharing",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zjruan/electron-vuex.git"
+  },
+  "keywords": [
+    "electron-vue",
+    "vuex",
+    "electron-vuex",
+    "multi-window"
+  ],
+  "author": "rzhj@foxmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zjruan/electron-vuex/issues"
+  },
+  "homepage": "https://github.com/zjruan/electron-vuex#readme",
+  "dependencies": {
+    "electron-store": "^6.0.1"
+  }
+}
