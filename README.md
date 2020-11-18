@@ -79,8 +79,6 @@ Installation of the Vuex Electron easy as 1-2-3.
 
 4. Well done you did it! The last step is to add the star to this repo :smile:
 
-**Usage example: [Vuex Electron Example](https://github.com/electron-vuex-example)**
-
 ## IMPORTANT
 
 In renderer process to call actions you need to use `dispatch` or `mapActions`. Don't use `commit` because actions fired via `commit` will not be shared between processes.
